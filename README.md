@@ -1,27 +1,21 @@
-Step to create shutdown switch
+**<h1>Step To Create Led Shutdown Switch</h1>** <br>
 
-    Connect switch to GPIO3.
+- **Add config device tree overlays** <br>
+```sudo nano /boot/config.txt```
 
-    Add config device tree overlays
-    sudo nano /boot/config.txt
+- **Insert this to the bottom** <br>
+```dtoverlay=gpio-shutdown,gpio_pin=3,active_low=1,gpio_pull=up```
 
-Insert this to the bottom
-    dtoverlay=gpio-shutdown,gpio_pin=3,active_low=1,gpio_pull=up
-
-
-
-     Create file 
+- **Create file** <br> 
      sudo nano /etc/udev/rules.d/99-gpio-power.rules
 
+- **And insert this** <br>
+```ACTION!="REMOVE", SUBSYSTEM=="input", KERNEL=="event*", \``` <br> 
+   ```SUBSYSTEMS=="platform", DRIVERS=="gpio-keys", \``` <br> 
+   ```ATTRS{keys}=="116", TAG+="power-switch"``` <br>
 
-And insert this 
-    ACTION!="REMOVE", SUBSYSTEM=="input", KERNEL=="event*", \
-                            SUBSYSTEMS=="platform", DRIVERS=="gpio-keys", \
-                            ATTRS{keys}=="116", TAG+="power-switch"
+**And restart raspberry pi.** <br>
 
-    And restart raspberry pi.
-
-
-*** I2C must be deactivated if you use GPIO3 *** 
+**<h3>I2C must be deactivated if you use GPIO3</h3>** <br> 
 
 ![Screenshot](LedBotton.jpg)
