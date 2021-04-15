@@ -14,7 +14,7 @@
    ```SUBSYSTEMS=="platform", DRIVERS=="gpio-keys", \``` <br> 
    ```ATTRS{keys}=="116", TAG+="power-switch"``` <br>
 
-**And restart raspberry pi.** <br>
+- **And restart raspberry pi.** <br>
 
 **<h3>I2C must be deactivated if you use GPIO3</h3>** <br> 
 
