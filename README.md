@@ -24,10 +24,4 @@ And insert this
 
 *** I2C must be deactivated if you use GPIO3 *** 
 
-
-
-
-+  = Pin 2 (5v)
-NO = Pin 5 (GPIO3)
-C  = Pin 6 (GND)
--  = Pin 9 (GND)
+![Screenshot](LedBotton.jpg)
