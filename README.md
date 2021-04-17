@@ -1,4 +1,4 @@
-**<h1>Step To Create Led Shutdown Switch</h1>** <br>
+**<h1>Create Led Shutdown Switch</h1>** <br>
 
 - **Add config device tree overlays** <br>
 ```sudo nano /boot/config.txt```
