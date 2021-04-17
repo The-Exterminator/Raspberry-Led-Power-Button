@@ -16,6 +16,6 @@
 
 - **And restart raspberry pi.** <br>
 
-**<h3>I2C must be deactivated if you use GPIO3</h3>** <br> 
+**<h3>I2C must be deactivated if you use GPIO3 (Pin 5)</h3>** <br> 
 
 ![Screenshot](LedBotton.jpg)
