@@ -1,8 +1,7 @@
 **<h1>Create Led Shutdown Switch</h1>** <br>
-
-**This power switch will shutdown the Pi safely so that you don’t have** <br>
-**to worry about corrupting your SD card and file system,** <br>
-**which can happen if you just disconnect the power abruptly.** <br>
+**<h3>This power switch will shutdown the Pi safely so that you don’t have</h3>** <br>
+**<h3>to worry about corrupting your SD card and file system,</h3>** <br>
+**<h3>which can happen if you just disconnect the power abruptly.</h3>** <br>
 
 - **Add config device tree overlays** <br>
 ```sudo nano /boot/config.txt```
